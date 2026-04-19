@@ -200,7 +200,7 @@ nav ul li a:hover {
     display: flex;
     width: 75%;
     height: 75%;
-    animation: slideCarousel 400s linear infinite;
+    animation: slideCarousel 100s linear infinite;
     animation-play-state: running;
 }
 
@@ -261,7 +261,7 @@ nav ul li a:hover {
     text-align: center;
     padding-top: 30px;
     cursor: pointer;
-    font-size: x-large;
+    font-size: large;
     color: #0a192f;
     animation: scale 4s ease-in-out infinite;
 }
