@@ -3,94 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cybersecurity | MiTECH</title>
+    <meta name="description" content="Learn about cybersecurity awareness, online scam prevention, and digital safety tips from MiTECH.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cyber.css">
     <link rel="icon" href="images/DOM.jpeg">
 </head>
 <body>
+
     <!-- Header & Navigation -->
     <header>
-        <div class="logo"><a href="#home"></a>Mi<span>TECH</span><p class="kofi">Mahonri TECHNOLOGIES</p></div>
-        
+        <div class="logo">
+            <a href="index.html" class="logo-main">Mi<span>TECH</span></a>
+            <p class="logo-sub">Mahonri TECHNOLOGIES</p>
+        </div>
+
+        <input type="checkbox" id="nav-check">
+
+        <label for="nav-check" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Skills</a></li>
-                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
+
         <div class="search-container">
             <input type="text" placeholder="Search...">
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
-
     </header>
 
-     <div style="background-color: #0a192f;">
-        <section class="caption-container">
-            <figure class="animated-caption">
-                <figcaption class="caption-track">
-                    <div class="caption-text">
-                        <p class="caption-title">My Portfolio</p>
-                        <p class="caption-subtitle">Bridging innovation and world-class cybersecurity.</p>
-                    </div>
-                </figcaption>
-            </figure>
-        </section>
-    </div>
-    
-    <section class="banku"> 
-            <h2>Cybersecurity is no longer just an IT concern; it is a critical requirement 
-                for survival in 2026 due to the massive scale of digital crime and the rising 
-                sophistication of attackers such as Romance Scam, Mobile Money Scam, 
-                WhatsApp Scam, etc.
-            </h2><br>
-        
-
-            <h1>AVOID CLICKING ON A LINK YOU DON'T TRUST</h1>
-            <h2>Avoid the mindset that security is a "one-and-done" task. It’s a constant habit 
-            of verifying everything and assuming that at some point, a defense will fail. 
-            The Cyber Security Authority (CSA) of Ghana was established by the Cybersecurity 
-            Act, 2020 (Act 1038) to regulate cybersecurity activities in Ghana; to promote 
-            the development of cybersecurity in the country and to provide for related 
-            matters. Protection of Children Online for a Safer Digital Ghana and globally 
-            is very important because our children are the future leaders.
-            The Cyber Security Authority (CSA) of Ghana was established by the Cybersecurity 
-            Act, 2020 (Act 1038) to regulate cybersecurity activities in Ghana; to promote 
-            the development of cybersecurity in the country and to provide for related matters.
-            Protection of Children Online for a Safer Digital Ghana and globally is very 
-            important because our children are the future leaders.
-            </h2>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <span class="page-tag"><i class="fa fa-shield"></i> &nbsp; Cybersecurity</span>
+            <h1>Stay Safe in the <em>Digital World</em></h1>
+            <p class="hero-sub">In 2026, cyber threats are more sophisticated than ever. Your habits and awareness are your strongest defence.</p>
+        </div>
     </section>
 
-    <footer id="contact">
-    <div class="footer-wrapper">
-        <div class="footer-column footer-brand">
-            <div class="yaw"><a href="#home">Mi<span>TECH</span></a></div>
-            <p>Mahonri TECHNOLOGIES</p>
-            <div class="social-handles">
-                <a href="https://www.linkedin.com/in/dominic-quarshie-98/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="Dominic Quarshie on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/@dominicquarshie" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="Dominic Quarshie on YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/@dominicquarshie" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="Dominic Quarshie on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    <!-- Main Content -->
+    <div class="page-content">
+        <div class="content-wrapper">
+
+            <!-- Alert Banner -->
+            <div class="threat-alert">
+                <i class="fa fa-triangle-exclamation"></i>
+                <div>
+                    <h3>Critical Warning</h3>
+                    <p>Cybersecurity is no longer just an IT concern — it is a critical requirement for survival in 2026 due to the massive scale of digital crime and the rising sophistication of attackers including Romance Scams, Mobile Money Fraud, and WhatsApp Impersonation.</p>
+                </div>
             </div>
-        </div>
-        <div class="footer-column footer-left">
-            <h3>Quick links</h3>
-            <a href="#home">Accessibility</a>
-            <a href="#home">Terms of Use</a>
-            <a href="#home">Privacy Notice</a>
-            <a href="#home">Cookie Preferences</a>
-        </div>
-        <div class="footer-column footer-contact">
-            <p>© 2026 by Dominic Quarshie</p>
-            <p>T: +233 2049 64854</p>
-            <p>E: dominicquarshie98@gmail.com</p>
-            <p>All rights reserved.</p>
+
+            <!-- Common Threats -->
+            <div class="sec-head">
+                <h2>Common Cyber Threats</h2>
+                <div class="rule"></div>
+            </div>
+
+            <div class="tip-grid">
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fa fa-heart-crack"></i></div>
+                    <h3>Romance Scams</h3>
+                    <p>Fraudsters build fake online relationships to gain your trust, then manipulate you into sending money. Never send money to someone you've only met online.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fa fa-mobile-screen"></i></div>
+                    <h3>Mobile Money Fraud</h3>
+                    <p>Criminals impersonate telecom agents or use social engineering to steal your mobile money PIN. Never share your PIN or OTP with anyone, ever.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp Impersonation</h3>
+                    <p>Attackers clone contacts or hack accounts to request urgent money transfers. Always verify through a phone call before sending any funds.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fa fa-fish"></i></div>
+                    <h3>Phishing Attacks</h3>
+                    <p>Fake emails, SMS, and websites trick you into entering your credentials. Always check the URL and sender address before clicking any link.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fa fa-link-slash"></i></div>
+                    <h3>Malicious Links</h3>
+                    <p>A single click on an untrusted link can install malware or grant attackers full access to your device. Think before you click — always.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fa fa-user-secret"></i></div>
+                    <h3>Identity Theft</h3>
+                    <p>Your personal data is valuable. Criminals use stolen information to open accounts or commit fraud in your name. Guard your data fiercely.</p>
+                </div>
+            </div>
+
+            <!-- Core Mindset -->
+            <div class="callout-quote">
+                <p>Avoid the mindset that security is a "one-and-done" task. It's a constant habit of verifying everything and assuming that at some point, a defence will fail.</p>
+                <cite>Zero Trust Security Principle</cite>
+            </div>
+
+            <!-- CSA Ghana -->
+            <div class="sec-head">
+                <h2>Ghana's Cybersecurity Authority</h2>
+                <div class="rule"></div>
+            </div>
+
+            <div class="info-banner">
+                <i class="fa fa-circle-info"></i>
+                <p>The <strong>Cyber Security Authority (CSA) of Ghana</strong> was established by the Cybersecurity Act, 2020 (Act 1038) to regulate cybersecurity activities in Ghana, promote the development of cybersecurity in the country, and provide for related matters.</p>
+            </div>
+
+            <div class="info-banner">
+                <i class="fa fa-child"></i>
+                <p><strong>Protection of Children Online</strong> for a Safer Digital Ghana is very important because our children are the future leaders. Report any online abuse or exploitation to the CSA Ghana immediately.</p>
+            </div>
+
         </div>
     </div>
-</footer>
+
+    <footer id="contact">
+        <div class="footer-wrapper">
+            <div class="footer-brand">
+                <div class="yaw"><a href="index.html">Mi<span>TECH</span></a></div>
+                <p>Mahonri TECHNOLOGIES</p>
+                <p class="tagline">Bridging innovation and world-class cybersecurity for a safer digital world.</p>
+                <div class="social-handles">
+                    <a href="https://www.linkedin.com/in/dominic-quarshie-98/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@dominicquarshie" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@dominicquarshie" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Accessibility</a>
+                <a href="index.html">Terms of Use</a>
+                <a href="index.html">Privacy Notice</a>
+                <a href="index.html">Cookie Preferences</a>
+            </div>
+            <div class="footer-column footer-contact">
+                <h3>Contact</h3>
+                <p>T: +233 2049 64854</p>
+                <p>E: dominicquarshie98@gmail.com</p>
+                <p>Ghana, West Africa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; 2026 <span>Dominic Quarshie</span> &#8212; Mahonri TECHNOLOGIES. All rights reserved.</p>
+            <p>Built with <span>&#10084;</span> &amp; code.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
