@@ -33,6 +33,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -88,39 +89,46 @@
 
     <!-- FEATURES SECTION -->
     <div id="about" class="intro">
-        <h1>Hi I'm, <span>DOMINIC QUARSHIE</span></h1>
+        <div class="intro-content">
+            <p class="intro-label">Featured professional</p>
+            <h1>Hi, I'm <span>DOMINIC QUARSHIE</span></h1>
+            <p class="intro-copy">Cybersecurity and digital forensics specialist-in-training with a passion for secure web architecture, threat analysis, and innovation.</p>
+            <div class="intro-actions">
+                <a href="#achievements" class="btn btn-primary">View Achievements</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
     </div>
 
     <section class="scroll">
         <p><b>Scroll down for more</b></p>
     </section>
     
-    <section class="portfolio"> 
-    <h1>My Portfolio</h1>
-    </section>
-    <section class="features">
-
-        <div class="card">
-            <img src="images/DOM.jpeg" alt="Innovation">
-            <h2>About me</h2>
-            <p>
-                A Tech enthusiast and a B.Sc. Cyber Security and Digital Forensics 
-                student at USTED (2024–2028) academic year. 
-                Focused on threat detection, incident response, forensic investigations, and more...
-            </p>
+    <section class="portfolio">
+        <div class="portfolio-header">
+            <p class="section-tag">Portfolio Overview</p>
+            <h1>My Portfolio</h1>
+            <p class="portfolio-intro">A strong foundation in cybersecurity and digital forensics, built around real-world problem solving, secure system design, and modern threat mitigation strategies.</p>
         </div>
+        <section class="features">
 
-        <div class="card">
-            <img src="images/customer.png" alt="Integrity">
-            <h2>Vision</h2>
-            <p>
-                A simple student project aimed at meeting industrial needs to contribute to the development of innovative solutions in the field of cybersecurity and digital forensics. Mahonri TECHONOLOGIES (<b>MiTECH</b>) a leader in digital transformation, providing 
-                robust web architecture and impenetrable security. With the evolving of Technology 
-                and Innovation, the rate of cyber crime is increasing rapidly. MiTECH 
-                provides Solutions, free cyber awareness creation...
-            </p>
-        </div>
+            <article class="feature-card">
+                <div class="feature-icon">
+                    <img src="images/DOM.jpeg" alt="About me">
+                </div>
+                <h2>About Me</h2>
+                <p>A cybersecurity and digital forensics student at USTED (2024–2028), focused on threat detection, incident response, forensic investigations, and building resilient digital systems.</p>
+            </article>
 
+            <article class="feature-card">
+                <div class="feature-icon feature-icon-alt">
+                    <img src="images/customer.png" alt="Vision">
+                </div>
+                <h2>Vision</h2>
+                <p>MiTECH aims to lead digital transformation with secure web architecture, robust cyber defense, and awareness-driven solutions that support innovation confidently.</p>
+            </article>
+
+        </section>
     </section>
     
     <!-- About & Values Section -->
@@ -310,6 +318,23 @@
         <p>Built with <span>❤</span> & code.</p>
     </div>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('header nav ul li a');
+        const navCheck = document.getElementById('nav-check');
+
+        if (!navLinks.length || !navCheck) return;
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 850) {
+                    navCheck.checked = false;
+                }
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
